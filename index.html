@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Encrypt :: Decrypt</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler.min.css">
+</head>
+<body>
+
+  <div class="container-lg">
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="page-header">
+            <h1>
+              Codificador / Descodificador
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-body">
+              <form role="form">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">
+                    Texto a Codificar / Descodificar
+                  </label>
+                  <textarea class="form-control" id="workText"></textarea>
+                </div>
+                <div class="hr-text">
+                  <span> Elige la función </span>
+                </div>
+                <div class="text-center">
+                  <div class="btn-group" role="group">
+                    <button class="btn btn-primary" type="button" onClick="encr(document.getElementById('workText').value)">
+                      Codificar
+                    </button>
+                    <button class="btn btn-secondary" type="button" onClick="decr(document.getElementById('workText').value)">
+                      Descodificar
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body result">
+              <h2>Resultado del Proceso:</h2>
+              <div id="resultText"></div>
+              <br>
+              <div class="text-center">
+                <button id="copyButton" class="btn btn-success" type="button">
+                  Copiar Resultado
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="text-right">Escrito por <em>Jose Antonio Solis</em></p>
+        </div>
+      </div>
+
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/js/tabler.min.js"></script>
+  <script src="app.js"></script>
+  <script>
+    // console.log(encr('Gato'));
+    // console.log(decr('gaitober'));
+  </script>
+</body>
+</html>
